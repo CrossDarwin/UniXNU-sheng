@@ -88,6 +88,13 @@ revision = "2ab05c11ae80e8b59dac2d312f627e78cacc0fca"
 result = "2026-10-26: DEBUG firmware and a 219283456-byte boot image built for the minimal arm64e kernel. DarwinBoot accepts arm64e capability bits. The kernel was relinked with legacy threaded starts, all 103192 fixups were walked, and the source corecrypto HMAC was regenerated after the entry and panic probes. Prior notes report fastboot download and boot returned OKAY; kernel and userspace execution remain unobserved. This handoff only rechecked the existing image SHA-256 against the archived manifest; it did not boot this image. The recorded base revision has uncommitted build changes."
 
 
+[[area.evidence]]
+kind = "device"
+reference = "reports/macos-desktop-20261115.md"
+command = "fastboot boot boot/boot.img"
+revision = "31815846b94465178abdda717096df07e7395cfa"
+result = "Confirmed Data initialization and desktop entry on sheng with the qualified firmware transport; independent reboot persistence and peripheral stability remain untested"
+
 [[area]]
 id = "cpu"
 status = "implemented"

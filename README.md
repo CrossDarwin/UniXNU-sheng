@@ -31,7 +31,7 @@ exports nodes with `unixnu,adt-name`.
 `ShengHidInput` and `ShengNovatekTouch` provide the input integration.
 `QcomGeniSpi` provides the shared SPI controller interface.
 `Ath12kWifi` supplies the Wi-Fi stack through board PCIe, MSI, DMA,
-and network interfaces. The payload volume is 208 MiB. The device selects
+and network interfaces. The OS profile selects the payload capacity. The device selects
 sRGB display properties and a 120 Hz display timing request.
 
 ## Development record
