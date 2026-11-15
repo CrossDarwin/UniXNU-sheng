@@ -95,6 +95,11 @@ command = "fastboot boot boot/boot.img"
 revision = "31815846b94465178abdda717096df07e7395cfa"
 result = "Confirmed Data initialization and desktop entry on sheng with the qualified firmware transport; independent reboot persistence and peripheral stability remain untested"
 
+[[area.evidence]]
+kind = "source"
+reference = "board.toml"
+result = "The macOS compatibility template explicitly updates ShengBootMemoryDxe alongside DarwinBoot. The old SEC stays byte-identical. DXE applies the live ABL-qualified 8 GiB memory policy, retains boot inputs and firmware reservations, and maps unowned bank fragments before publishing them. Host regressions passed; updated firmware build and hardware usable-memory validation are pending. The previous compatibility image reported 6.44 GB and did not contain this DXE update."
+
 [[area]]
 id = "cpu"
 status = "implemented"

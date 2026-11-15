@@ -297,6 +297,8 @@ CI_ENABLE_METAL_GPU = "0"
 "url" = "https://github.com/CrossDarwin/macOS-ForSheng/releases/download/sheng-recovery-218fdcce-preview1/sheng-recovery-218FDCCE-boot.img.xz"
 "sha256" = "8fed0304acdfac65421f8523d6be727311ee5f6f8826ac20736735de0e533124"
 "loader_guid" = "1b64af87-8415-4b57-9b16-680d70913b9f"
+# Keep the qualified SEC while applying the ABL memory policy in DXE.
+driver_guids = ["5c0e4b7a-31d2-4e8f-9a66-0b1f7d2c8e43"]
 
 ["os_overrides"."macos-27.3-26C5035r"."kernel"]
 "defconfig" = "sheng_macos_defconfig"
